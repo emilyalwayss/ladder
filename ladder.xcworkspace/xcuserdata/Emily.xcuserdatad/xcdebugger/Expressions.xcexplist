@@ -19,19 +19,30 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MeViewController.viewDidLoad() -&gt; ():MeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inviteButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "RegisterViewController.createAccount(firstName : String, lastName : String, userEmail : String, userPassword : String) -&gt; ():RegisterViewController.swift">
       </ContextState>
       <ContextState
          contextName = "SearchTableViewController.viewWillAppear(Bool) -&gt; ():SearchTableViewController.swift">
          <PersistentStrings>
             <PersistentString
+               value = "Date(timeIntervalSinceNow: 0)">
+            </PersistentString>
+            <PersistentString
                value = "NSCalendar(calendarIdentifier: .gregorian)?.components(.weekday, from: Date(timeIntervalSinceNow: 0)).weekday">
             </PersistentString>
             <PersistentString
-               value = "self.date">
+               value = "date == Date()">
             </PersistentString>
             <PersistentString
-               value = "Date(timeIntervalSinceNow: 0)">
+               value = "format.string(from: date) == format.string(from: Date())">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -121,6 +132,9 @@
                value = "me.username">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():SearchTableViewController.swift">
       </ContextState>
       <ContextState
          contextName = "(queryUsers(query : String, completionHandler : ([String : Any]) -&gt; ()) -&gt; ()).(closure #1):Helpers.swift">

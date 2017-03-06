@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         getUserData(endpoint: "isLoggedIn"){
             isLoggedIn in
-            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: isLoggedIn["isLoggedIn"] as! Bool ? "UserProfileViewController" : "RegisterViewController")
+            self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: isLoggedIn["isLoggedIn"] as! Bool ? "MeProfileViewController" : "RegisterViewController")
         }
         
         UINavigationBar.appearance().backgroundColor = Constants.Colors.BLUE

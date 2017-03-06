@@ -18,13 +18,15 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var responseLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var recordLabel: UILabel!
-    @IBOutlet weak var testLabel: UIStackView!
 }
 
 class SearchTableViewController: UITableViewController {
   
+    @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
+    
     var date: Date = Date()
     var users: [[String: Any]] = []
+    var selectedIndex: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,8 @@ class SearchTableViewController: UITableViewController {
         let format = DateFormatter()
         format.dateFormat = "EEEE, MMM d"
         self.navigationItem.title = format.string(from: date)
+        
+        backBarButtonItem.isEnabled = format.string(from: date) != format.string(from: Date())
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,14 +73,28 @@ class SearchTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        self.performSegue(withIdentifier: "searchToProfileSegue", sender: self)
+    }
 
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "searchToSearchSegue") {
-            ((segue.destination as! UINavigationController).topViewController as! SearchTableViewController).date = Calendar.current.date(byAdding: .day, value: 1, to: self.date)!
+        
+        if (segue.identifier == "searchForwardSegue") {
+             ((segue.destination as! UINavigationController).topViewController as! SearchTableViewController).date = Calendar.current.date(byAdding: .day, value: 1, to: self.date)!
+        }
+        else if (segue.identifier == "searchBackSegue") {
+            ((segue.destination as! UINavigationController).topViewController as! SearchTableViewController).date = Calendar.current.date(byAdding: .day, value: -1, to: self.date)!
+        }
+        else if (segue.identifier == "searchToProfileSegue") {
+            let profileViewController = (segue.destination as! UINavigationController).topViewController as! UserProfileViewController
+            profileViewController.user = users[selectedIndex]
+            
         }
     }
  

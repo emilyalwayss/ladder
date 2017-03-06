@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9544AA482100CAEB85D0A449 /* Pods_ladder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017914C856A0288430A7BB96 /* Pods_ladder.framework */; };
 		A10239201E50CE2A009A583B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102391F1E50CE2A009A583B /* Helpers.swift */; };
-		A10239221E52AE01009A583B /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10239211E52AE01009A583B /* UserProfileViewController.swift */; };
+		A10239221E52AE01009A583B /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10239211E52AE01009A583B /* MeViewController.swift */; };
 		A1969E871E4AC258004BFE79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1969E861E4AC258004BFE79 /* AppDelegate.swift */; };
 		A1969E8B1E4AC258004BFE79 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1969E8A1E4AC258004BFE79 /* SecondViewController.swift */; };
 		A1969E8E1E4AC258004BFE79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1969E8C1E4AC258004BFE79 /* Main.storyboard */; };
@@ -20,6 +20,7 @@
 		A1969EB71E4ACF50004BFE79 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1969EB61E4ACF50004BFE79 /* RegisterViewController.swift */; };
 		A1CE6E3B1E5B798B006204A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */; };
 		A1CE6E3D1E5FB11D006204A6 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */; };
+		A1CE6E3F1E6CCEFB006204A6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,7 @@
 		35107CA3E4D872610451005D /* Pods-ladder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ladder/Pods-ladder.debug.xcconfig"; sourceTree = "<group>"; };
 		44B5CEB706AD38F6F801EF1D /* Pods-ladder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ladder/Pods-ladder.release.xcconfig"; sourceTree = "<group>"; };
 		A102391F1E50CE2A009A583B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		A10239211E52AE01009A583B /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A10239211E52AE01009A583B /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		A1969E831E4AC258004BFE79 /* ladder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ladder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1969E861E4AC258004BFE79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1969E8A1E4AC258004BFE79 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		A1969EB61E4ACF50004BFE79 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +133,10 @@
 				A1969E941E4AC258004BFE79 /* Info.plist */,
 				A1969EB61E4ACF50004BFE79 /* RegisterViewController.swift */,
 				A102391F1E50CE2A009A583B /* Helpers.swift */,
-				A10239211E52AE01009A583B /* UserProfileViewController.swift */,
+				A10239211E52AE01009A583B /* MeViewController.swift */,
 				A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */,
 				A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */,
+				A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */,
 			);
 			path = ladder;
 			sourceTree = "<group>";
@@ -350,9 +353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CE6E3D1E5FB11D006204A6 /* SearchTableViewController.swift in Sources */,
+				A1CE6E3F1E6CCEFB006204A6 /* UserProfileViewController.swift in Sources */,
 				A1CE6E3B1E5B798B006204A6 /* LoginViewController.swift in Sources */,
 				A1969EB71E4ACF50004BFE79 /* RegisterViewController.swift in Sources */,
-				A10239221E52AE01009A583B /* UserProfileViewController.swift in Sources */,
+				A10239221E52AE01009A583B /* MeViewController.swift in Sources */,
 				A1969E8B1E4AC258004BFE79 /* SecondViewController.swift in Sources */,
 				A1969E871E4AC258004BFE79 /* AppDelegate.swift in Sources */,
 				A10239201E50CE2A009A583B /* Helpers.swift in Sources */,
