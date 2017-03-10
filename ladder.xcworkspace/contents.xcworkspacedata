@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SocketIOManager.swift">
+   </FileRef>
+   <FileRef
       location = "group:ladder.xcodeproj">
    </FileRef>
    <FileRef

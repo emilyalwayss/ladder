@@ -10,6 +10,32 @@
 		9544AA482100CAEB85D0A449 /* Pods_ladder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017914C856A0288430A7BB96 /* Pods_ladder.framework */; };
 		A10239201E50CE2A009A583B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102391F1E50CE2A009A583B /* Helpers.swift */; };
 		A10239221E52AE01009A583B /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10239211E52AE01009A583B /* MeViewController.swift */; };
+		A17D67661E6F9C0A0071BB18 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67651E6F9C0A0071BB18 /* SocketIOManager.swift */; };
+		A17D67801E6F9CEC0071BB18 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67681E6F9CEC0071BB18 /* SocketAckEmitter.swift */; };
+		A17D67811E6F9CEC0071BB18 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67691E6F9CEC0071BB18 /* SocketAckManager.swift */; };
+		A17D67821E6F9CEC0071BB18 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676A1E6F9CEC0071BB18 /* SocketAnyEvent.swift */; };
+		A17D67831E6F9CEC0071BB18 /* SocketClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676B1E6F9CEC0071BB18 /* SocketClientManager.swift */; };
+		A17D67841E6F9CEC0071BB18 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676C1E6F9CEC0071BB18 /* SocketEngine.swift */; };
+		A17D67851E6F9CEC0071BB18 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676D1E6F9CEC0071BB18 /* SocketEngineClient.swift */; };
+		A17D67861E6F9CEC0071BB18 /* SocketEnginePacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676E1E6F9CEC0071BB18 /* SocketEnginePacketType.swift */; };
+		A17D67871E6F9CEC0071BB18 /* SocketEnginePollable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D676F1E6F9CEC0071BB18 /* SocketEnginePollable.swift */; };
+		A17D67881E6F9CEC0071BB18 /* SocketEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67701E6F9CEC0071BB18 /* SocketEngineSpec.swift */; };
+		A17D67891E6F9CEC0071BB18 /* SocketEngineWebsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67711E6F9CEC0071BB18 /* SocketEngineWebsocket.swift */; };
+		A17D678A1E6F9CEC0071BB18 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67721E6F9CEC0071BB18 /* SocketEventHandler.swift */; };
+		A17D678B1E6F9CEC0071BB18 /* SocketExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67731E6F9CEC0071BB18 /* SocketExtensions.swift */; };
+		A17D678C1E6F9CEC0071BB18 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67741E6F9CEC0071BB18 /* SocketIOClient.swift */; };
+		A17D678D1E6F9CEC0071BB18 /* SocketIOClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67751E6F9CEC0071BB18 /* SocketIOClientConfiguration.swift */; };
+		A17D678E1E6F9CEC0071BB18 /* SocketIOClientOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67761E6F9CEC0071BB18 /* SocketIOClientOption.swift */; };
+		A17D678F1E6F9CEC0071BB18 /* SocketIOClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67771E6F9CEC0071BB18 /* SocketIOClientSpec.swift */; };
+		A17D67901E6F9CEC0071BB18 /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67781E6F9CEC0071BB18 /* SocketIOClientStatus.swift */; };
+		A17D67911E6F9CEC0071BB18 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67791E6F9CEC0071BB18 /* SocketLogger.swift */; };
+		A17D67921E6F9CEC0071BB18 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677A1E6F9CEC0071BB18 /* SocketPacket.swift */; };
+		A17D67931E6F9CEC0071BB18 /* SocketParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677B1E6F9CEC0071BB18 /* SocketParsable.swift */; };
+		A17D67941E6F9CEC0071BB18 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677C1E6F9CEC0071BB18 /* SocketStringReader.swift */; };
+		A17D67951E6F9CEC0071BB18 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677D1E6F9CEC0071BB18 /* SocketTypes.swift */; };
+		A17D67961E6F9CEC0071BB18 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677E1E6F9CEC0071BB18 /* SSLSecurity.swift */; };
+		A17D67971E6F9CEC0071BB18 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D677F1E6F9CEC0071BB18 /* WebSocket.swift */; };
+		A17D67991E721EBF0071BB18 /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67981E721EBF0071BB18 /* InvitationViewController.swift */; };
 		A1969E871E4AC258004BFE79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1969E861E4AC258004BFE79 /* AppDelegate.swift */; };
 		A1969E8B1E4AC258004BFE79 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1969E8A1E4AC258004BFE79 /* SecondViewController.swift */; };
 		A1969E8E1E4AC258004BFE79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1969E8C1E4AC258004BFE79 /* Main.storyboard */; };
@@ -21,6 +47,8 @@
 		A1CE6E3B1E5B798B006204A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */; };
 		A1CE6E3D1E5FB11D006204A6 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */; };
 		A1CE6E3F1E6CCEFB006204A6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */; };
+		CEB515BB78056A5AE23B57C3 /* Pods_ladderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DCF36405BDA19B3264519B /* Pods_ladderUITests.framework */; };
+		EDE20C8060D89178D0D9A0DE /* Pods_ladderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49BB17EB4718B80A319AEB5 /* Pods_ladderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +70,39 @@
 
 /* Begin PBXFileReference section */
 		017914C856A0288430A7BB96 /* Pods_ladder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A375A182A2051A2F00C66C /* Pods-ladderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ladderUITests/Pods-ladderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		35107CA3E4D872610451005D /* Pods-ladder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ladder/Pods-ladder.debug.xcconfig"; sourceTree = "<group>"; };
 		44B5CEB706AD38F6F801EF1D /* Pods-ladder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladder.release.xcconfig"; path = "Pods/Target Support Files/Pods-ladder/Pods-ladder.release.xcconfig"; sourceTree = "<group>"; };
+		50DCF36405BDA19B3264519B /* Pods_ladderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FEB9FB4D0AE416084DDCCD /* Pods-ladderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ladderTests/Pods-ladderTests.release.xcconfig"; sourceTree = "<group>"; };
 		A102391F1E50CE2A009A583B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A10239211E52AE01009A583B /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		A17D67651E6F9C0A0071BB18 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		A17D67681E6F9CEC0071BB18 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckEmitter.swift; sourceTree = "<group>"; };
+		A17D67691E6F9CEC0071BB18 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
+		A17D676A1E6F9CEC0071BB18 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketAnyEvent.swift; sourceTree = "<group>"; };
+		A17D676B1E6F9CEC0071BB18 /* SocketClientManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClientManager.swift; sourceTree = "<group>"; };
+		A17D676C1E6F9CEC0071BB18 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngine.swift; sourceTree = "<group>"; };
+		A17D676D1E6F9CEC0071BB18 /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineClient.swift; sourceTree = "<group>"; };
+		A17D676E1E6F9CEC0071BB18 /* SocketEnginePacketType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePacketType.swift; sourceTree = "<group>"; };
+		A17D676F1E6F9CEC0071BB18 /* SocketEnginePollable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEnginePollable.swift; sourceTree = "<group>"; };
+		A17D67701E6F9CEC0071BB18 /* SocketEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineSpec.swift; sourceTree = "<group>"; };
+		A17D67711E6F9CEC0071BB18 /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		A17D67721E6F9CEC0071BB18 /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketEventHandler.swift; sourceTree = "<group>"; };
+		A17D67731E6F9CEC0071BB18 /* SocketExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketExtensions.swift; sourceTree = "<group>"; };
+		A17D67741E6F9CEC0071BB18 /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClient.swift; sourceTree = "<group>"; };
+		A17D67751E6F9CEC0071BB18 /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
+		A17D67761E6F9CEC0071BB18 /* SocketIOClientOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientOption.swift; sourceTree = "<group>"; };
+		A17D67771E6F9CEC0071BB18 /* SocketIOClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientSpec.swift; sourceTree = "<group>"; };
+		A17D67781E6F9CEC0071BB18 /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		A17D67791E6F9CEC0071BB18 /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketLogger.swift; sourceTree = "<group>"; };
+		A17D677A1E6F9CEC0071BB18 /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketPacket.swift; sourceTree = "<group>"; };
+		A17D677B1E6F9CEC0071BB18 /* SocketParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketParsable.swift; sourceTree = "<group>"; };
+		A17D677C1E6F9CEC0071BB18 /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketStringReader.swift; sourceTree = "<group>"; };
+		A17D677D1E6F9CEC0071BB18 /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketTypes.swift; sourceTree = "<group>"; };
+		A17D677E1E6F9CEC0071BB18 /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		A17D677F1E6F9CEC0071BB18 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		A17D67981E721EBF0071BB18 /* InvitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
 		A1969E831E4AC258004BFE79 /* ladder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ladder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1969E861E4AC258004BFE79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1969E8A1E4AC258004BFE79 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +120,9 @@
 		A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		B49BB17EB4718B80A319AEB5 /* Pods_ladderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC07D3F41C4EC7990D6F79F /* Pods-ladderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ladderTests/Pods-ladderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFEF2F17E0F653E973CEFCED /* Pods-ladderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ladderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ladderUITests/Pods-ladderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE20C8060D89178D0D9A0DE /* Pods_ladderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB515BB78056A5AE23B57C3 /* Pods_ladderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +158,43 @@
 			children = (
 				35107CA3E4D872610451005D /* Pods-ladder.debug.xcconfig */,
 				44B5CEB706AD38F6F801EF1D /* Pods-ladder.release.xcconfig */,
+				BBC07D3F41C4EC7990D6F79F /* Pods-ladderTests.debug.xcconfig */,
+				65FEB9FB4D0AE416084DDCCD /* Pods-ladderTests.release.xcconfig */,
+				22A375A182A2051A2F00C66C /* Pods-ladderUITests.debug.xcconfig */,
+				DFEF2F17E0F653E973CEFCED /* Pods-ladderUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A17D67671E6F9CEC0071BB18 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A17D67681E6F9CEC0071BB18 /* SocketAckEmitter.swift */,
+				A17D67691E6F9CEC0071BB18 /* SocketAckManager.swift */,
+				A17D676A1E6F9CEC0071BB18 /* SocketAnyEvent.swift */,
+				A17D676B1E6F9CEC0071BB18 /* SocketClientManager.swift */,
+				A17D676C1E6F9CEC0071BB18 /* SocketEngine.swift */,
+				A17D676D1E6F9CEC0071BB18 /* SocketEngineClient.swift */,
+				A17D676E1E6F9CEC0071BB18 /* SocketEnginePacketType.swift */,
+				A17D676F1E6F9CEC0071BB18 /* SocketEnginePollable.swift */,
+				A17D67701E6F9CEC0071BB18 /* SocketEngineSpec.swift */,
+				A17D67711E6F9CEC0071BB18 /* SocketEngineWebsocket.swift */,
+				A17D67721E6F9CEC0071BB18 /* SocketEventHandler.swift */,
+				A17D67731E6F9CEC0071BB18 /* SocketExtensions.swift */,
+				A17D67741E6F9CEC0071BB18 /* SocketIOClient.swift */,
+				A17D67751E6F9CEC0071BB18 /* SocketIOClientConfiguration.swift */,
+				A17D67761E6F9CEC0071BB18 /* SocketIOClientOption.swift */,
+				A17D67771E6F9CEC0071BB18 /* SocketIOClientSpec.swift */,
+				A17D67781E6F9CEC0071BB18 /* SocketIOClientStatus.swift */,
+				A17D67791E6F9CEC0071BB18 /* SocketLogger.swift */,
+				A17D677A1E6F9CEC0071BB18 /* SocketPacket.swift */,
+				A17D677B1E6F9CEC0071BB18 /* SocketParsable.swift */,
+				A17D677C1E6F9CEC0071BB18 /* SocketStringReader.swift */,
+				A17D677D1E6F9CEC0071BB18 /* SocketTypes.swift */,
+				A17D677E1E6F9CEC0071BB18 /* SSLSecurity.swift */,
+				A17D677F1E6F9CEC0071BB18 /* WebSocket.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		A1969E7A1E4AC257004BFE79 = {
@@ -125,6 +222,8 @@
 		A1969E851E4AC258004BFE79 /* ladder */ = {
 			isa = PBXGroup;
 			children = (
+				A17D67671E6F9CEC0071BB18 /* Source */,
+				A17D67651E6F9C0A0071BB18 /* SocketIOManager.swift */,
 				A1969E861E4AC258004BFE79 /* AppDelegate.swift */,
 				A1969E8A1E4AC258004BFE79 /* SecondViewController.swift */,
 				A1969E8C1E4AC258004BFE79 /* Main.storyboard */,
@@ -137,6 +236,7 @@
 				A1CE6E3A1E5B798B006204A6 /* LoginViewController.swift */,
 				A1CE6E3C1E5FB11D006204A6 /* SearchTableViewController.swift */,
 				A1CE6E3E1E6CCEFB006204A6 /* UserProfileViewController.swift */,
+				A17D67981E721EBF0071BB18 /* InvitationViewController.swift */,
 			);
 			path = ladder;
 			sourceTree = "<group>";
@@ -163,6 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				017914C856A0288430A7BB96 /* Pods_ladder.framework */,
+				B49BB17EB4718B80A319AEB5 /* Pods_ladderTests.framework */,
+				50DCF36405BDA19B3264519B /* Pods_ladderUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1969EB01E4AC258004BFE79 /* Build configuration list for PBXNativeTarget "ladderTests" */;
 			buildPhases = (
+				3BD1E3D3C11EE639E941B28F /* [CP] Check Pods Manifest.lock */,
 				A1969E951E4AC258004BFE79 /* Sources */,
 				A1969E961E4AC258004BFE79 /* Frameworks */,
 				A1969E971E4AC258004BFE79 /* Resources */,
+				E202A527A6C2E7D24D3B8340 /* [CP] Embed Pods Frameworks */,
+				05D0FDC7BB9449600215D2C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,9 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1969EB31E4AC258004BFE79 /* Build configuration list for PBXNativeTarget "ladderUITests" */;
 			buildPhases = (
+				EEA93CF757B2F6A6A62B1396 /* [CP] Check Pods Manifest.lock */,
 				A1969EA01E4AC258004BFE79 /* Sources */,
 				A1969EA11E4AC258004BFE79 /* Frameworks */,
 				A1969EA21E4AC258004BFE79 /* Resources */,
+				9088F4F9DF29FA270208F5C7 /* [CP] Embed Pods Frameworks */,
+				8708BEC41D87D84639663E4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +408,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05D0FDC7BB9449600215D2C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ladderTests/Pods-ladderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30FE75C5B467162429985814 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +436,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ladder/Pods-ladder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD1E3D3C11EE639E941B28F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		55B078424802B973FA5A5F7D /* [CP] Embed Pods Frameworks */ = {
@@ -345,6 +483,66 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8708BEC41D87D84639663E4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ladderUITests/Pods-ladderUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9088F4F9DF29FA270208F5C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ladderUITests/Pods-ladderUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E202A527A6C2E7D24D3B8340 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ladderTests/Pods-ladderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA93CF757B2F6A6A62B1396 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,13 +550,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17D67861E6F9CEC0071BB18 /* SocketEnginePacketType.swift in Sources */,
 				A1CE6E3D1E5FB11D006204A6 /* SearchTableViewController.swift in Sources */,
+				A17D67801E6F9CEC0071BB18 /* SocketAckEmitter.swift in Sources */,
+				A17D67891E6F9CEC0071BB18 /* SocketEngineWebsocket.swift in Sources */,
+				A17D67931E6F9CEC0071BB18 /* SocketParsable.swift in Sources */,
+				A17D67881E6F9CEC0071BB18 /* SocketEngineSpec.swift in Sources */,
+				A17D67941E6F9CEC0071BB18 /* SocketStringReader.swift in Sources */,
+				A17D67991E721EBF0071BB18 /* InvitationViewController.swift in Sources */,
+				A17D678C1E6F9CEC0071BB18 /* SocketIOClient.swift in Sources */,
+				A17D678E1E6F9CEC0071BB18 /* SocketIOClientOption.swift in Sources */,
+				A17D67821E6F9CEC0071BB18 /* SocketAnyEvent.swift in Sources */,
 				A1CE6E3F1E6CCEFB006204A6 /* UserProfileViewController.swift in Sources */,
 				A1CE6E3B1E5B798B006204A6 /* LoginViewController.swift in Sources */,
+				A17D67921E6F9CEC0071BB18 /* SocketPacket.swift in Sources */,
+				A17D678D1E6F9CEC0071BB18 /* SocketIOClientConfiguration.swift in Sources */,
 				A1969EB71E4ACF50004BFE79 /* RegisterViewController.swift in Sources */,
+				A17D67661E6F9C0A0071BB18 /* SocketIOManager.swift in Sources */,
 				A10239221E52AE01009A583B /* MeViewController.swift in Sources */,
+				A17D67911E6F9CEC0071BB18 /* SocketLogger.swift in Sources */,
+				A17D67811E6F9CEC0071BB18 /* SocketAckManager.swift in Sources */,
+				A17D678F1E6F9CEC0071BB18 /* SocketIOClientSpec.swift in Sources */,
+				A17D67951E6F9CEC0071BB18 /* SocketTypes.swift in Sources */,
+				A17D678A1E6F9CEC0071BB18 /* SocketEventHandler.swift in Sources */,
+				A17D67961E6F9CEC0071BB18 /* SSLSecurity.swift in Sources */,
 				A1969E8B1E4AC258004BFE79 /* SecondViewController.swift in Sources */,
+				A17D678B1E6F9CEC0071BB18 /* SocketExtensions.swift in Sources */,
+				A17D67971E6F9CEC0071BB18 /* WebSocket.swift in Sources */,
+				A17D67841E6F9CEC0071BB18 /* SocketEngine.swift in Sources */,
 				A1969E871E4AC258004BFE79 /* AppDelegate.swift in Sources */,
+				A17D67901E6F9CEC0071BB18 /* SocketIOClientStatus.swift in Sources */,
+				A17D67831E6F9CEC0071BB18 /* SocketClientManager.swift in Sources */,
+				A17D67851E6F9CEC0071BB18 /* SocketEngineClient.swift in Sources */,
+				A17D67871E6F9CEC0071BB18 /* SocketEnginePollable.swift in Sources */,
 				A10239201E50CE2A009A583B /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +759,7 @@
 		};
 		A1969EB11E4AC258004BFE79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC07D3F41C4EC7990D6F79F /* Pods-ladderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +774,7 @@
 		};
 		A1969EB21E4AC258004BFE79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65FEB9FB4D0AE416084DDCCD /* Pods-ladderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +789,7 @@
 		};
 		A1969EB41E4AC258004BFE79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A375A182A2051A2F00C66C /* Pods-ladderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ladderUITests/Info.plist;
@@ -576,6 +803,7 @@
 		};
 		A1969EB51E4AC258004BFE79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFEF2F17E0F653E973CEFCED /* Pods-ladderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ladderUITests/Info.plist;

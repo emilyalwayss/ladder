@@ -38,6 +38,29 @@ extension UIViewController {
     }
 }
 
+extension CALayer {
+    func addBorder(edge: UIRectEdge, color: UIColor, thickness: CGFloat) {
+        let border = CALayer()
+        
+        switch edge {
+        case UIRectEdge.top:
+            border.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.frame.width, height: thickness))
+        case UIRectEdge.bottom:
+            border.frame = CGRect(origin: CGPoint(x: 0, y: self.frame.height - thickness), size: CGSize(width: self.frame.width, height: thickness))
+        case UIRectEdge.left:
+            border.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: thickness, height: self.frame.height))
+        case UIRectEdge.right:
+            border.frame = CGRect(origin: CGPoint(x: self.frame.width - thickness, y: 0), size: CGSize(width: thickness, height: self.frame.height))
+        default:
+            break
+        }
+        
+        border.backgroundColor = color.cgColor
+        
+        self.addSublayer(border)
+    }
+}
+
 extension UIImageView {
     func makeCircular() {
         self.layer.borderWidth = 1
