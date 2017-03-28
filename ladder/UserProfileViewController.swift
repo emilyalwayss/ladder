@@ -38,12 +38,12 @@ class UserProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationItem.title = user["fullName"] as? String
+        self.navigationItem.title = (user["first_name"] as! String) + " " + (user["last_name"] as! String)
         
         self.recordValueLabel.text = user["record"] == nil ? "0:0" : user["record"] as! String
         self.skillValueLabel.text = user["skill"] == nil ? "1" : user["skill"] as! String
-        self.courtsValueLabel.text = user["courts"] == nil ? "No preferred courts" : user["courts"] as! String
-        self.timesValueLabel.text = user["times"] == nil ? "No preferred times" : user["times"] as! String
+        self.courtsValueLabel.text = user["courts"] == nil ? "No preferred courts" : (user["courts"] as! [String]).joined(separator: ", ")
+        self.timesValueLabel.text = user["times"] == nil ? "No preferred times" : (user["times"] as! [String]).joined(separator: ", ")
     }
     
     override func didReceiveMemoryWarning() {

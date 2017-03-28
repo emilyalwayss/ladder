@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Stormpath
 
 class RegisterViewController: UIViewController {
 
@@ -34,16 +33,16 @@ class RegisterViewController: UIViewController {
         createAccount(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, userEmail: emailTextField.text!, userPassword: passwordTextField.text!)
     }
     func createAccount(firstName: String, lastName: String, userEmail: String, userPassword: String) {
-        let newUser = RegistrationForm(email: userEmail, password: userPassword)
-        newUser.givenName = firstName
-        newUser.surname = lastName
-        
-        Stormpath.sharedSession.register(account: newUser) { (account, error) -> Void in if let error = error {
-            self.alert(message: error.localizedDescription)
-        }
-        else {
-            self.alert(title: "Success", message: "You are now registered!", action: UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "registerToTabSegue", sender: self) }))
-            }
-        }
+//        let newUser = RegistrationForm(email: userEmail, password: userPassword)
+//        newUser.givenName = firstName
+//        newUser.surname = lastName
+//        
+//        Stormpath.sharedSession.register(account: newUser) { (account, error) -> Void in if let error = error {
+//            self.alert(message: error.localizedDescription)
+//        }
+//        else {
+//            self.alert(title: "Success", message: "You are now registered!", action: UIAlertAction(title:"OK", style: .default, handler:  { action in self.performSegue(withIdentifier: "registerToTabSegue", sender: self) }))
+//            }
+//        }
     }
 }

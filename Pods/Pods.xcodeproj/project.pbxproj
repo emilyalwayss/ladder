@@ -7,82 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0922B73ED3061B48B2BC56CF02753B17 /* SocialLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */; };
 		0A4996BE6D97619329F9234761B5FE2E /* Pods-ladderTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43EAD6DE342EFA8D15BA3AC5BF357E87 /* Pods-ladderTests-dummy.m */; };
 		12B4FB135366A3352DADD528F58EDFB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		1911EE89759B842F9E18395E6CDB0A8F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */; };
 		198576893E11EDB98532171FF8E7BE41 /* Pods-ladder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC79064A660099A77414CE5467FCC2E /* Pods-ladder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C81CB0A73CCA3B40DC68329B8C4FAA9 /* StormpathConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */; };
-		255A4BA7505CEF36F670E269D6580B79 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */; };
 		2BDE932F2E038430A6EFBAE2F686C2B2 /* Pods-ladderUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D25DAD7ED49545605B31C0ED2BA01EC /* Pods-ladderUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A344F2F143E297361FEDC6DC413ED57 /* StormpathError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */; };
 		3A72B434E6663AC59E811AC003975857 /* Pods-ladderTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE6C7A64FC72208F10EF3AE8EA70EBD9 /* Pods-ladderTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AECB96C4669F7BCB16080691DAAC4E9 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */; };
 		518F99F13501083884E3720D39051FF0 /* Pods-ladderUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CA9B1ACA9D82F9F74EA280D3E1DD46 /* Pods-ladderUITests-dummy.m */; };
-		539E6ABC50F75126F9B27F687300E8F5 /* Stormpath-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */; };
-		5A2A8F5DDFA4BBC6660D3BCF5FA8782D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */; };
-		6750AFFFBEF351EDD799FC31F0F2FB9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6993AE1A055BFCD83BEC099EC0AFD79F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */; };
-		6E1266DC7D70992E20F76C29513A520F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */; };
 		7CB47C479A68ABE08BEEF5D6D061CCC1 /* Pods-ladder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD3A573BFE6A45BF538923C7F05ED0 /* Pods-ladder-dummy.m */; };
 		7D07AAACDE038011A1E27A132C67892D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		8625B80F661D388B43381045E327B469 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */; };
-		8EA12DDABA9A3574F76919F0D21EB13A /* AccountStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B8015A7C2E399E7B636697951970C /* AccountStore.swift */; };
-		90FF1726CA252D4A6AC7997745AEFAD9 /* Stormpath-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A148178681196D60F2C89C08FC706ED4 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */; };
-		A745A4B28D43C4D55D8345666FDEB734 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */; };
-		B20302F8F37C1AD408C632587A9F9F61 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */; };
-		B825918D86A087CB57D595DE04CAFDDD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */; };
-		C2E3C128BEC05117ED454B302F3FD74D /* Stormpath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */; };
 		EFFBC9643E1F1D4E956E4F68E3DF832C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FC80B9AC39347DCD89C4E953C1D8F9CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FDB2825DD18A2C6BD0B2A7899D045DE;
-			remoteInfo = Stormpath;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0568AC28479F8C8F21B882AE47C461AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05BC6B845CE0A6CA5D235801728392F7 /* Pods-ladderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladderTests.debug.xcconfig"; sourceTree = "<group>"; };
-		078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationForm.swift; path = Stormpath/Networking/RegistrationForm.swift; sourceTree = "<group>"; };
-		0C84FD5E113FC7D78C86085C802038C4 /* Pods-ladderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ladderTests.modulemap"; sourceTree = "<group>"; };
+		0C84FD5E113FC7D78C86085C802038C4 /* Pods-ladderTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ladderTests.modulemap"; sourceTree = "<group>"; };
 		0CBD3A573BFE6A45BF538923C7F05ED0 /* Pods-ladder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ladder-dummy.m"; sourceTree = "<group>"; };
 		1328AEB447231468161171D82E793177 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1879BF08E75862EE7C889111C73FCC38 /* Pods_ladderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ladderUITests.framework; path = "Pods-ladderUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1879BF08E75862EE7C889111C73FCC38 /* Pods_ladderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D783B67B35DC38543C27E3C0B0A496C /* Pods-ladderUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ladderUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		235C9828C5E69329E42C717C16F2F061 /* Pods-ladderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladderUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stormpath.xcconfig; sourceTree = "<group>"; };
-		2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Stormpath/Account.swift; sourceTree = "<group>"; };
 		2D25DAD7ED49545605B31C0ED2BA01EC /* Pods-ladderUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ladderUITests-umbrella.h"; sourceTree = "<group>"; };
-		39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = Stormpath/Networking/APIClient.swift; sourceTree = "<group>"; };
 		43EAD6DE342EFA8D15BA3AC5BF357E87 /* Pods-ladderTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ladderTests-dummy.m"; sourceTree = "<group>"; };
-		4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIRequest.swift; path = Stormpath/Networking/APIRequest.swift; sourceTree = "<group>"; };
-		5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathConfiguration.swift; path = Stormpath/StormpathConfiguration.swift; sourceTree = "<group>"; };
-		50B896610EA03A3DC238F087F3183864 /* Pods-ladderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ladderUITests.modulemap"; sourceTree = "<group>"; };
-		53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Stormpath/Dependencies/SwiftyJSON.swift; sourceTree = "<group>"; };
-		558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = Stormpath/Networking/APIResponse.swift; sourceTree = "<group>"; };
+		50B896610EA03A3DC238F087F3183864 /* Pods-ladderUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ladderUITests.modulemap"; sourceTree = "<group>"; };
 		5C5675BF1BED62E62D851505095991B2 /* Pods-ladderUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ladderUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5D9848A99FEA711D6C0294B8A65B596A /* Pods-ladder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ladder.modulemap"; sourceTree = "<group>"; };
-		6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormField.swift; path = Stormpath/Models/FormField.swift; sourceTree = "<group>"; };
-		6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Stormpath/Networking/Logger.swift; sourceTree = "<group>"; };
+		5D9848A99FEA711D6C0294B8A65B596A /* Pods-ladder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ladder.modulemap"; sourceTree = "<group>"; };
 		6DF82F7507D6A7862D9ACF42BCB66E41 /* Pods-ladderUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladderUITests-frameworks.sh"; sourceTree = "<group>"; };
 		6FC79064A660099A77414CE5467FCC2E /* Pods-ladder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ladder-umbrella.h"; sourceTree = "<group>"; };
-		7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = Stormpath/Models/LoginModel.swift; sourceTree = "<group>"; };
 		7D0F264DE38F4907203C308A7B8A3BA2 /* Pods-ladderTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ladderTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		81B0BBE4DB10BD2D5BF2C3B221252974 /* Stormpath-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-prefix.pch"; sourceTree = "<group>"; };
-		840B8015A7C2E399E7B636697951970C /* AccountStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccountStore.swift; path = Stormpath/Models/AccountStore.swift; sourceTree = "<group>"; };
 		8C5D2856D6FA3B253E597812BF872644 /* Pods-ladderUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladderUITests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StormpathError.swift; path = Stormpath/Networking/StormpathError.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D6675027AFB28509E16DE1CCE077F9E /* Pods-ladder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladder.release.xcconfig"; sourceTree = "<group>"; };
 		A14DF6CD73421419C723607DB1C2ADA6 /* Pods-ladder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladder-resources.sh"; sourceTree = "<group>"; };
-		A3B01AEB3AF937A51B621F8BD1E0FCA5 /* Pods_ladder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ladder.framework; path = "Pods-ladder.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B01AEB3AF937A51B621F8BD1E0FCA5 /* Pods_ladder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A3067DA6FA2AD703848D4CEB10545C /* Pods-ladderTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ladderTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACF1FC5BDEE3537AFA6655D32BD4CC1A /* Pods-ladderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladderTests.release.xcconfig"; sourceTree = "<group>"; };
 		B1706A29D4D090528DD0714D523D06B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,22 +47,13 @@
 		BA0180FAEF8C73471D7E6EBD9D47D4EA /* Pods-ladder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladder.debug.xcconfig"; sourceTree = "<group>"; };
 		BD8E3D8E6EEF195B26050AC225B46778 /* Pods-ladderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ladderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF720CE8D404978B9E93E28180BA2194 /* Pods-ladder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ladder-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stormpath-umbrella.h"; sourceTree = "<group>"; };
 		C738EB33A8F90E561611C7B6B19F9FA2 /* Pods-ladderTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladderTests-resources.sh"; sourceTree = "<group>"; };
 		C7CA9B1ACA9D82F9F74EA280D3E1DD46 /* Pods-ladderUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ladderUITests-dummy.m"; sourceTree = "<group>"; };
-		C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainService.swift; path = Stormpath/Keychain/KeychainService.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D004438BF8968B3ABB9765F2CF46F522 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocialLoginService.swift; path = Stormpath/Networking/SocialLoginService.swift; sourceTree = "<group>"; };
 		DE68EE0C502A2F66153571EC035A765E /* Pods-ladderTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladderTests-frameworks.sh"; sourceTree = "<group>"; };
-		E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIService.swift; path = Stormpath/Networking/APIService.swift; sourceTree = "<group>"; };
-		E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stormpath.swift; path = Stormpath/Core/Stormpath.swift; sourceTree = "<group>"; };
-		E9C81E9D1FE3F3852327CE54AB092431 /* Pods_ladderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ladderTests.framework; path = "Pods-ladderTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C81E9D1FE3F3852327CE54AB092431 /* Pods_ladderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ladderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFF40B62D0B974B4121417B509C9F8E /* Pods-ladder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ladder-frameworks.sh"; sourceTree = "<group>"; };
 		EE6C7A64FC72208F10EF3AE8EA70EBD9 /* Pods-ladderTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ladderTests-umbrella.h"; sourceTree = "<group>"; };
-		EFE752913C37C7109B0A3EDB6F779AAB /* Stormpath.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Stormpath.modulemap; sourceTree = "<group>"; };
-		F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stormpath-dummy.m"; sourceTree = "<group>"; };
-		F557425F28134CC34297A461AD0DB01B /* Stormpath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stormpath.framework; path = Stormpath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,35 +81,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C54C47B834563B183D8950A93CDB10CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6750AFFFBEF351EDD799FC31F0F2FB9E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D39AC7853B101D02CA574E5F11E5137 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D004438BF8968B3ABB9765F2CF46F522 /* Info.plist */,
-				EFE752913C37C7109B0A3EDB6F779AAB /* Stormpath.modulemap */,
-				2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */,
-				F2B3F61C9C82517F33ED0D69C1B2B58D /* Stormpath-dummy.m */,
-				81B0BBE4DB10BD2D5BF2C3B221252974 /* Stormpath-prefix.pch */,
-				C065FF178783E95CA69D46331E7251BF /* Stormpath-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Stormpath";
-			sourceTree = "<group>";
-		};
 		2F1008CF91979F40CD65301AA709D97B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				435C29AC8C1DB3468ACC1D46FE9A3D70 /* Stormpath */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -182,31 +107,6 @@
 			);
 			name = "Pods-ladderTests";
 			path = "Target Support Files/Pods-ladderTests";
-			sourceTree = "<group>";
-		};
-		435C29AC8C1DB3468ACC1D46FE9A3D70 /* Stormpath */ = {
-			isa = PBXGroup;
-			children = (
-				2A3EEC13C76F1B89E1C71B2ADD7CB908 /* Account.swift */,
-				840B8015A7C2E399E7B636697951970C /* AccountStore.swift */,
-				39A32E2E5F9E3575A87F232AA4D151F2 /* APIClient.swift */,
-				4FCB307DF91540EB14BF076C192B8D8B /* APIRequest.swift */,
-				558FDB7150095CA87553FB4B340B6FB8 /* APIResponse.swift */,
-				E1D1610E8B553712DB8194E6DA265A46 /* APIService.swift */,
-				6769355DACA2F1319C9506186CAF19C6 /* FormField.swift */,
-				C982F41618272CC8FDA5485E5496FCD7 /* KeychainService.swift */,
-				6B7F1601CFC9219F03DEC10753C75F78 /* Logger.swift */,
-				7C44943AD5C7B12DF5A8987AF04B5A29 /* LoginModel.swift */,
-				078B770A07C04D588DF6A3F245A65735 /* RegistrationForm.swift */,
-				D4097B3B28444DCA8FDF542C4811C6B4 /* SocialLoginService.swift */,
-				E2BB28C8511CD5CDC6DA5B952B7C128B /* Stormpath.swift */,
-				5016BD5E2E3503F9A3D4589D9D91988C /* StormpathConfiguration.swift */,
-				9996274FFBE398B9125BFB9EEF57857A /* StormpathError.swift */,
-				53D796504957142FD1587C6353FE1CEF /* SwiftyJSON.swift */,
-				1D39AC7853B101D02CA574E5F11E5137 /* Support Files */,
-			);
-			name = Stormpath;
-			path = Stormpath;
 			sourceTree = "<group>";
 		};
 		4BF3C76A4A354F2B545CAE74287C2441 /* Targets Support Files */ = {
@@ -280,7 +180,6 @@
 				A3B01AEB3AF937A51B621F8BD1E0FCA5 /* Pods_ladder.framework */,
 				E9C81E9D1FE3F3852327CE54AB092431 /* Pods_ladderTests.framework */,
 				1879BF08E75862EE7C889111C73FCC38 /* Pods_ladderUITests.framework */,
-				F557425F28134CC34297A461AD0DB01B /* Stormpath.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,34 +219,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F717579103A1CF12A3EFF43ABBA0BF1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				90FF1726CA252D4A6AC7997745AEFAD9 /* Stormpath-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6FDB2825DD18A2C6BD0B2A7899D045DE /* Stormpath */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DFDB20A888D346F9A7B28845DA6C6BA9 /* Build configuration list for PBXNativeTarget "Stormpath" */;
-			buildPhases = (
-				D29D162BCCF8EB10B0B682B3976E1888 /* Sources */,
-				C54C47B834563B183D8950A93CDB10CE /* Frameworks */,
-				9F717579103A1CF12A3EFF43ABBA0BF1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Stormpath;
-			productName = Stormpath;
-			productReference = F557425F28134CC34297A461AD0DB01B /* Stormpath.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		D90002D5F246D5D368727DA5171839E3 /* Pods-ladderUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3BDAE25F8A4E469359BFF4F3A2DBA95 /* Build configuration list for PBXNativeTarget "Pods-ladderUITests" */;
@@ -376,7 +250,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ADB7CE4A5E3804AF3D9FF29C7D60EF9E /* PBXTargetDependency */,
 			);
 			name = "Pods-ladder";
 			productName = "Pods-ladder";
@@ -424,7 +297,6 @@
 				E6C449DCCAEAD66C12F1E928079D5E50 /* Pods-ladder */,
 				EF47AD731B3479BD91DA1755D7A9272C /* Pods-ladderTests */,
 				D90002D5F246D5D368727DA5171839E3 /* Pods-ladderUITests */,
-				6FDB2825DD18A2C6BD0B2A7899D045DE /* Stormpath */,
 			);
 		};
 /* End PBXProject section */
@@ -454,40 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D29D162BCCF8EB10B0B682B3976E1888 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A745A4B28D43C4D55D8345666FDEB734 /* Account.swift in Sources */,
-				8EA12DDABA9A3574F76919F0D21EB13A /* AccountStore.swift in Sources */,
-				6E1266DC7D70992E20F76C29513A520F /* APIClient.swift in Sources */,
-				A148178681196D60F2C89C08FC706ED4 /* APIRequest.swift in Sources */,
-				B825918D86A087CB57D595DE04CAFDDD /* APIResponse.swift in Sources */,
-				4AECB96C4669F7BCB16080691DAAC4E9 /* APIService.swift in Sources */,
-				B20302F8F37C1AD408C632587A9F9F61 /* FormField.swift in Sources */,
-				5A2A8F5DDFA4BBC6660D3BCF5FA8782D /* KeychainService.swift in Sources */,
-				1911EE89759B842F9E18395E6CDB0A8F /* Logger.swift in Sources */,
-				255A4BA7505CEF36F670E269D6580B79 /* LoginModel.swift in Sources */,
-				8625B80F661D388B43381045E327B469 /* RegistrationForm.swift in Sources */,
-				0922B73ED3061B48B2BC56CF02753B17 /* SocialLoginService.swift in Sources */,
-				539E6ABC50F75126F9B27F687300E8F5 /* Stormpath-dummy.m in Sources */,
-				C2E3C128BEC05117ED454B302F3FD74D /* Stormpath.swift in Sources */,
-				1C81CB0A73CCA3B40DC68329B8C4FAA9 /* StormpathConfiguration.swift in Sources */,
-				3A344F2F143E297361FEDC6DC413ED57 /* StormpathError.swift in Sources */,
-				6993AE1A055BFCD83BEC099EC0AFD79F /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ADB7CE4A5E3804AF3D9FF29C7D60EF9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Stormpath;
-			target = 6FDB2825DD18A2C6BD0B2A7899D045DE /* Stormpath */;
-			targetProxy = FC80B9AC39347DCD89C4E953C1D8F9CE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2517DF795B962376F1C4D6FF42719937 /* Debug */ = {
@@ -520,39 +359,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2C31E4B4AA1D66AD4D195CB0DFACB68A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Stormpath;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -739,38 +545,6 @@
 			};
 			name = Release;
 		};
-		D73D1A417BC636236040D049E8406558 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2565E369B8E3CAE90BEB24903838A99C /* Stormpath.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Stormpath/Stormpath-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Stormpath/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Stormpath/Stormpath.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Stormpath;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E2B491873EA25ADD1B591690D35D19C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 235C9828C5E69329E42C717C16F2F061 /* Pods-ladderUITests.debug.xcconfig */;
@@ -885,15 +659,6 @@
 			buildConfigurations = (
 				E2B491873EA25ADD1B591690D35D19C3 /* Debug */,
 				65C72DD3FAF8B0B5566DB3132E76B33A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DFDB20A888D346F9A7B28845DA6C6BA9 /* Build configuration list for PBXNativeTarget "Stormpath" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2C31E4B4AA1D66AD4D195CB0DFACB68A /* Debug */,
-				D73D1A417BC636236040D049E8406558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

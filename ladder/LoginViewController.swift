@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Stormpath
 
 class LoginViewController: UIViewController {
 
@@ -36,19 +35,19 @@ class LoginViewController: UIViewController {
     }
     
     func login(userEmail: String, userPassword: String) {
-        Stormpath.sharedSession.login(username: userEmail, password: userPassword) { success, error in
-            if let error = error {
-                self.alert(message: error.localizedDescription)
-                return
-            } else {
-                
-                Stormpath.sharedSession.me { (account, error) -> Void in if let account = account {
-                    me = account
+//        Stormpath.sharedSession.login(username: userEmail, password: userPassword) { success, error in
+//            if let error = error {
+//                self.alert(message: error.localizedDescription)
+//                return
+//            } else {
+//                
+//                Stormpath.sharedSession.me { (account, error) -> Void in if let account = account {
+//                    me = account
                     self.performSegue(withIdentifier: "loginToTabSegue", sender: self)
-                    }
-                }
-            }
-        }
+//                    }
+//                }
+//            }
+//        }
     }
 
     

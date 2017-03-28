@@ -8,9 +8,25 @@
 
 import Foundation
 import UIKit
-import Stormpath
 
-var me: Account? = nil
+//var me: Account? = nil
+
+struct user {
+    let first_name: String
+    let last_name: String
+    let level: String
+    let courts: [String]
+    let times: [String]
+    let win_record: Int
+    let loss_record: Int
+}
+
+struct data {
+    static let me = user(first_name: "Emily", last_name: "Chen", level: "3.0", courts: ["Harvard", "MIT", "Carter-Williams"], times: ["Thursday AM", "Saturday PM"], win_record: 3, loss_record: 5)
+    
+    static let users = [user(first_name: "Michael", last_name: "Rong", level: "4.0", courts: ["Harvard", "Woburn"], times: ["Friday AM", "Sunday PM"], win_record: 8, loss_record: 2), user(first_name: "Kiko", last_name: "Lam", level: "3.5", courts: ["Tufts"], times: ["Friday AM", "Wednesday AM"], win_record: 5, loss_record: 0)]
+}
+
 
 struct Constants {
     static let service = "http://localhost:3000/"
@@ -71,39 +87,39 @@ extension UIImageView {
     }
 }
 
-func getUserData (endpoint: String, completionHandler: @escaping (_ customData: [String: Any]) -> ()) {
-    
-    var request = URLRequest(url: URL(string: String("\(Constants.service)\(endpoint)"))!)
-    request.setValue("Bearer \(Stormpath.sharedSession.accessToken ?? "")", forHTTPHeaderField: "Authorization")
-    let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-        guard let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
-            return
-        }
-        completionHandler(json!)
-        })
-    task.resume()
-}
-
-func queryUsers (query: String, completionHandler: @escaping (_ result: [[String: Any]]) -> ()) {
-    
-    let username = "6IIZJZ2JHHCJ9ZXLEXXINJREI"
-    let password = "2IMWSbZXAYpMda0f4/S5aqzWJ6YXT+ljxTMX9GgjR44"
-    let loginString = String(format: "%@:%@", username, password)
-    let loginData = loginString.data(using: String.Encoding.utf8)!
-    let base64LoginString = loginData.base64EncodedString()
-    
-    // create the request
-    let url = URL(string: "https://api.stormpath.com/v1/applications/4KIXjEmVwXS6VpmZ6xOouq/accounts")!
-    var request = URLRequest(url: url)
-    request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
-    
-    // fire off the request
-    // make sure your class conforms to NSURLConnectionDelegate
-    let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
-        guard let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
-            return
-        }
-        completionHandler(json!["items"] as! [[String: Any]])
-    })
-    task.resume()
-}
+//func getUserData (endpoint: String, completionHandler: @escaping (_ customData: [String: Any]) -> ()) {
+//    
+//    var request = URLRequest(url: URL(string: String("\(Constants.service)\(endpoint)"))!)
+//    request.setValue("Bearer \(Stormpath.sharedSession.accessToken ?? "")", forHTTPHeaderField: "Authorization")
+//    let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+//        guard let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+//            return
+//        }
+//        completionHandler(json!)
+//        })
+//    task.resume()
+//}
+//
+//func queryUsers (query: String, completionHandler: @escaping (_ result: [[String: Any]]) -> ()) {
+//    
+//    let username = "6IIZJZ2JHHCJ9ZXLEXXINJREI"
+//    let password = "2IMWSbZXAYpMda0f4/S5aqzWJ6YXT+ljxTMX9GgjR44"
+//    let loginString = String(format: "%@:%@", username, password)
+//    let loginData = loginString.data(using: String.Encoding.utf8)!
+//    let base64LoginString = loginData.base64EncodedString()
+//    
+//    // create the request
+//    let url = URL(string: "https://api.stormpath.com/v1/applications/4KIXjEmVwXS6VpmZ6xOouq/accounts")!
+//    var request = URLRequest(url: url)
+//    request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+//    
+//    // fire off the request
+//    // make sure your class conforms to NSURLConnectionDelegate
+//    let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
+//        guard let data = data, let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+//            return
+//        }
+//        completionHandler(json!["items"] as! [[String: Any]])
+//    })
+//    task.resume()
+//}

@@ -31,10 +31,17 @@ class SearchTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        queryUsers(query: "accounts") {
-            users in
-            self.users = users.filter { ($0["username"] as! String) != me!.username }
-            self.tableView.reloadData()
+//        queryUsers(query: "accounts") {
+//            users in
+//            self.users = users.filter { ($0["username"] as! String) != me!.username }
+//            self.tableView.reloadData()
+//        }
+        for user in data.users {
+            var dic: [String: Any] = [:]
+            for (_, attr) in Mirror(reflecting: user).children.enumerated() {
+                dic[attr.label!] = attr.value
+            }
+            users.append(dic)
         }
     }
     
@@ -64,9 +71,9 @@ class SearchTableViewController: UITableViewController {
         cell.profileImageView.makeCircular()
         
         let userDict = users[indexPath.row] 
-        cell.nameLabel.text = userDict["givenName"] as! String?
-        cell.courtsLabel.text = userDict["courts"] == nil ? "No preferred courts" : userDict["courts"] as! String
-        cell.timeLabel.text = userDict["times"] == nil ? "No preferred times" : userDict["times"] as! String
+        cell.nameLabel.text = (userDict["first_name"] as! String) + " " + (userDict["last_name"] as! String)
+        cell.courtsLabel.text = userDict["courts"] == nil ? "No preferred courts" : (userDict["courts"] as! [String]).joined(separator: ", ")
+        cell.timeLabel.text = userDict["times"] == nil ? "No preferred times" : (userDict["times"] as! [String]).joined(separator: ", ")
         cell.responseLabel.text = userDict["response"] == nil ? "" : userDict["response"] as! String
         cell.levelLabel.text = userDict["level"] == nil ? "1" : userDict["level"] as! String
         cell.recordLabel.text = userDict["record"] == nil ? "0:0" : userDict["record"] as! String

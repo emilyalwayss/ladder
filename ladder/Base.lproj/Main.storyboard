@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FpH-RI-E8d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4eG-M2-E4t">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -360,6 +360,136 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-135" y="813"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="vhX-Ox-uzC">
+            <objects>
+                <viewController id="oiF-ej-XAa" customClass="WelcomeViewController" customModule="ladder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="543-Xp-znK"/>
+                        <viewControllerLayoutGuide type="bottom" id="UAZ-FG-d16"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tZq-66-RMK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Ladder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQK-zt-MJc">
+                                <rect key="frame" x="84" y="286" width="208" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A community for avid tennis players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLs-r2-igG">
+                                <rect key="frame" x="58" y="324" width="258" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM6-fv-Zw5">
+                                <rect key="frame" x="16" y="567" width="343" height="33.5"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FpH-RI-E8d" kind="presentation" id="o2s-Dr-chc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe to learn more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7da-dn-ZhA">
+                                <rect key="frame" x="124.5" y="436" width="127" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="1" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UAZ-FG-d16" firstAttribute="top" secondItem="lM6-fv-Zw5" secondAttribute="bottom" multiplier="10:9" id="23Y-F4-eX7"/>
+                            <constraint firstItem="7da-dn-ZhA" firstAttribute="centerX" secondItem="tZq-66-RMK" secondAttribute="centerX" id="9tg-hF-YkB"/>
+                            <constraint firstItem="pQK-zt-MJc" firstAttribute="centerY" secondItem="tZq-66-RMK" secondAttribute="centerY" multiplier="9:10" id="EWo-BM-MCD"/>
+                            <constraint firstItem="lM6-fv-Zw5" firstAttribute="centerX" secondItem="tZq-66-RMK" secondAttribute="centerX" id="Gsk-Sd-fBK"/>
+                            <constraint firstItem="kLs-r2-igG" firstAttribute="centerX" secondItem="tZq-66-RMK" secondAttribute="centerX" id="PEA-0c-mCE"/>
+                            <constraint firstItem="lM6-fv-Zw5" firstAttribute="leading" secondItem="tZq-66-RMK" secondAttribute="leadingMargin" id="Xsh-Ga-VJc"/>
+                            <constraint firstItem="pQK-zt-MJc" firstAttribute="centerX" secondItem="tZq-66-RMK" secondAttribute="centerX" id="dlN-9C-oK4"/>
+                            <constraint firstItem="7da-dn-ZhA" firstAttribute="centerY" secondItem="tZq-66-RMK" secondAttribute="centerY" multiplier="4:3" id="foJ-9A-vHg"/>
+                            <constraint firstItem="kLs-r2-igG" firstAttribute="centerY" secondItem="tZq-66-RMK" secondAttribute="centerY" id="h7f-nr-lAl"/>
+                            <constraint firstItem="lM6-fv-Zw5" firstAttribute="height" secondItem="tZq-66-RMK" secondAttribute="height" multiplier="1:20" id="q1s-9l-Tbu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lM6-fv-Zw5" secondAttribute="trailing" id="qQo-jM-YdP"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="BGa-NZ-xjF" appends="YES" id="vuA-Zo-mkE"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="RBa-xb-jJm"/>
+                    <connections>
+                        <outlet property="getStartedButton" destination="lM6-fv-Zw5" id="geL-hT-CMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3C-Zw-YXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BGa-NZ-xjF">
+                    <connections>
+                        <action selector="onPan:" destination="oiF-ej-XAa" id="Beo-pK-mn6"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-607.20000000000005" y="-1200.4497751124438"/>
+        </scene>
+        <!--Learn Page View Controller-->
+        <scene sceneID="Szj-xf-rP1">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4eG-M2-E4t" customClass="LearnPageViewController" customModule="ladder" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Fo7-fa-S9P"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tm1-vj-PgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="-1200.4497751124438"/>
+        </scene>
+        <!--Learn Page Content View Controller-->
+        <scene sceneID="7Xb-eF-mjP">
+            <objects>
+                <viewController storyboardIdentifier="LearnPageContentViewController" id="8JG-fc-2u7" customClass="LearnPageContentViewController" customModule="ladder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b0d-ot-UN3"/>
+                        <viewControllerLayoutGuide type="bottom" id="NBN-5q-t5Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pgr-j6-mWk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ladder is a city-wide tennis ladder exclusive in the Boston area" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpR-kI-H6X">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riI-Ep-d5i">
+                                <rect key="frame" x="16" y="549" width="343" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go Play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NBN-5q-t5Q" firstAttribute="top" secondItem="riI-Ep-d5i" secondAttribute="bottom" multiplier="10:9" constant="20" id="0Es-ji-Q5A"/>
+                            <constraint firstItem="zpR-kI-H6X" firstAttribute="centerX" secondItem="pgr-j6-mWk" secondAttribute="centerX" id="7IG-1P-q3r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="riI-Ep-d5i" secondAttribute="trailing" id="UCR-HU-L4L"/>
+                            <constraint firstItem="riI-Ep-d5i" firstAttribute="height" secondItem="pgr-j6-mWk" secondAttribute="height" multiplier="1:20" id="ZBQ-Dq-noQ"/>
+                            <constraint firstItem="zpR-kI-H6X" firstAttribute="centerY" secondItem="pgr-j6-mWk" secondAttribute="centerY" id="Ztu-84-8vM"/>
+                            <constraint firstItem="zpR-kI-H6X" firstAttribute="leading" secondItem="pgr-j6-mWk" secondAttribute="leadingMargin" id="sNB-bC-Hf0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zpR-kI-H6X" secondAttribute="trailing" id="uW7-ub-33L"/>
+                            <constraint firstItem="riI-Ep-d5i" firstAttribute="leading" secondItem="pgr-j6-mWk" secondAttribute="leadingMargin" id="yfT-G4-5Z7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goPlayButton" destination="riI-Ep-d5i" id="ftX-wW-vPU"/>
+                        <outlet property="infoLabel" destination="zpR-kI-H6X" id="fZ6-PF-xxp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vsa-D7-4QL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-1910"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="h09-kC-ERc">
@@ -864,7 +994,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="EDr-ZB-u9A"/>
         <segue reference="MPG-ep-Pq4"/>
-        <segue reference="UOp-Su-VcH"/>
     </inferredMetricsTieBreakers>
 </document>

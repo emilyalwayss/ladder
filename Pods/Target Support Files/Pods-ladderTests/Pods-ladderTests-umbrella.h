@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double StormpathVersionNumber;
-FOUNDATION_EXPORT const unsigned char StormpathVersionString[];
+FOUNDATION_EXPORT double Pods_ladderTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ladderTestsVersionString[];
 

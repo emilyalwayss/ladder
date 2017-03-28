@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Stormpath
 
 class MeViewController: UIViewController {
 
@@ -35,15 +34,20 @@ class MeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationItem.title = "\(me!.fullName)"
+        self.navigationItem.title = data.me.first_name + " " + data.me.last_name
+//        self.navigationItem.title = "\(me!.fullName)"
         
-        getUserData(endpoint: "userData") {
-            customData in
-            self.recordValueLabel.text = customData["record"] as! String?
-            self.skillValueLabel.text = customData["skill"] as! String?
-            self.courtsValueLabel.text = customData["courts"] as! String?
-            self.timesValueLabel.text = customData["times"] as! String?
-        }
+//        getUserData(endpoint: "userData") {
+//            customData in
+//            self.recordValueLabel.text = customData["record"] as! String?
+//            self.skillValueLabel.text = customData["skill"] as! String?
+//            self.courtsValueLabel.text = customData["courts"] as! String?
+//            self.timesValueLabel.text = customData["times"] as! String?
+//        }
+        self.recordValueLabel.text = String(data.me.win_record) + ":" + String(data.me.loss_record)
+        self.skillValueLabel.text = data.me.level
+        self.courtsValueLabel.text = data.me.courts.joined(separator: ", ")
+        self.timesValueLabel.text = data.me.times.joined(separator: ", ")
     }
 
     /*
