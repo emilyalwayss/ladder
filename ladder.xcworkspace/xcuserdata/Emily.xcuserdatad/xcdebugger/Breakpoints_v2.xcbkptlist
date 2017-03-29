@@ -42,61 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ladder/WelcomeViewController.swift"
-            timestampString = "512346070.813636"
+            timestampString = "512519078.978239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ladder/WelcomeViewController.swift"
-            timestampString = "512349083.744965"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "swiped(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ladder.WelcomeViewController.swiped (__ObjC.UIGestureRecognizer) -&gt; ()"
-                  moduleName = "ladder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Emily/Documents/Developer/ladder/ladder/WelcomeViewController.swift"
-                  timestampString = "512346582.329973"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ladder.WelcomeViewController.swiped (__ObjC.UIGestureRecognizer) -&gt; ()"
-                  moduleName = "ladder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Emily/Documents/Developer/ladder/ladder/WelcomeViewController.swift"
-                  timestampString = "512346582.331214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "148">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

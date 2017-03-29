@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class WelcomeViewController: UIViewController {
 
@@ -20,22 +21,12 @@ class WelcomeViewController: UIViewController {
         self.view.backgroundColor = Constants.Colors.BLUE
         getStartedButton.backgroundColor = Constants.Colors.ORANGE
         
-        swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+        swipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(WelcomeViewController.swiped(_:)))
+        swipeGestureRecognizer?.direction = .left
         view.addGestureRecognizer(swipeGestureRecognizer!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     
     func swiped(_ gesture: UIGestureRecognizer) {
-        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-            if swipeGesture.direction == .right {
-                self.performSegue(withIdentifier: "welcomeToLearnSegue", sender: self)
-            }
-        }
+        self.performSegue(withIdentifier: "welcomeToLearnSegue", sender: self)
     }
 }
