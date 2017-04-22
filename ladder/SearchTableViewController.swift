@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Stormpath
 
 class SearchTableViewCell: UITableViewCell {
     
