@@ -6,7 +6,6 @@ target 'ladder' do
   use_frameworks!
 
   # Pods for ladder
-  pod 'Stormpath', '~> 3.0’
 
   target 'ladderTests' do
     inherit! :search_paths
