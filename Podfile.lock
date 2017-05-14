@@ -1,12 +1,15 @@
 PODS:
-  - Stormpath (3.0.1)
+  - Alamofire (4.4.0)
+  - KeychainAccess (3.0.1)
 
 DEPENDENCIES:
-  - Stormpath (~> 3.0)
+  - Alamofire (~> 4.4)
+  - KeychainAccess
 
 SPEC CHECKSUMS:
-  Stormpath: 611ada2806a55db28b8fc1a069198d19295ec38f
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
 
-PODFILE CHECKSUM: 9248fc7aaf89389f3a7c192bf7558d3ea85d19df
+PODFILE CHECKSUM: ee2ae710946fd6c59787409b08bbe7e36bd4db2d
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.1.1
