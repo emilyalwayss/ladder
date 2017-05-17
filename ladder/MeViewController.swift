@@ -34,7 +34,12 @@ class MeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.navigationItem.title = data.me.first_name + " " + data.me.last_name
+        self.navigationItem.title = AuthenticationController.sharedInstance.user!.fullName
+        self.recordValueLabel.text = "\(AuthenticationController.sharedInstance.user!.gamesWon) : \(AuthenticationController.sharedInstance.user!.gamesLost)"
+        self.courtsValueLabel.text = AuthenticationController.sharedInstance.user!.preferredCourts?.joined(separator: ", ") ?? "Please set your preferred courts"
+        self.timesValueLabel.text = AuthenticationController.sharedInstance.user!.preferredTimes?.joined(separator: ", ") ?? "Please set your preferred times"
+        
+//        self.navigationItem.title = data.me.first_name + " " + data.me.last_name
 //        self.navigationItem.title = "\(me!.fullName)"
         
 //        getUserData(endpoint: "userData") {
@@ -44,10 +49,10 @@ class MeViewController: UIViewController {
 //            self.courtsValueLabel.text = customData["courts"] as! String?
 //            self.timesValueLabel.text = customData["times"] as! String?
 //        }
-        self.recordValueLabel.text = String(data.me.win_record) + ":" + String(data.me.loss_record)
-        self.skillValueLabel.text = data.me.level
-        self.courtsValueLabel.text = data.me.courts.joined(separator: ", ")
-        self.timesValueLabel.text = data.me.times.joined(separator: ", ")
+//        self.recordValueLabel.text = String(data.me.win_record) + ":" + String(data.me.loss_record)
+//        self.skillValueLabel.text = data.me.level
+//        self.courtsValueLabel.text = data.me.courts.joined(separator: ", ")
+//        self.timesValueLabel.text = data.me.times.joined(separator: ", ")
     }
 
     /*

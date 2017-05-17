@@ -39,7 +39,7 @@ extension UserDataManager : DataManagerProtocol {
     }
     
     func fetchDataFromAPI(completionHandler: @escaping DataManagerHandler) {
-        RequestHandler.request(endpoint: "user/\(AuthenticationController.sharedInstance.user!.id)", method: .get, parameters: nil, completionHandler: self.getCompletionHandlerForAPI({(response, success, error) in
+        RequestHandler.request(endpoint: "profile", method: .get, parameters: nil, completionHandler: self.getCompletionHandlerForAPI({(response, success, error) in
             if success {
                 completionHandler(response, true, nil)
             } else {

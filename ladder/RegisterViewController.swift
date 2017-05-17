@@ -33,10 +33,10 @@ class RegisterViewController: UIViewController {
         createAccount(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, userEmail: emailTextField.text!, userPassword: passwordTextField.text!)
     }
     func createAccount(firstName: String, lastName: String, userEmail: String, userPassword: String) {
-        AuthenticationController.sharedInstance.signUp(withEmail: emailTextField.text!, firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, completionHandler: {(authenticationStatus, isFirstTimeUser, error) in
+        AuthenticationController.sharedInstance.signUp(withEmail: emailTextField.text!, firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, password: passwordTextField.text!, completionHandler: {(authenticationStatus, isFirstTimeUser, error) in
             switch authenticationStatus {
             case .isAuthenticated:
-                self.performSegue(withIdentifier: "didAuthenticateEmail", sender: self)
+                self.performSegue(withIdentifier: "registerToTabSegue", sender: self)
             default:
                 let alertController = UIAlertController(title: "Error", message: "Error Signing Up", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel))

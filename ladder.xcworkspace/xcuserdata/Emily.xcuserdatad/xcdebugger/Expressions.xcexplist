@@ -3,10 +3,45 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "AuthenticationController.getAuthenticationStatus() -&gt; AuthenticationStatus:AuthenticationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user == nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "WelcomeViewController.swiped(UIGestureRecognizer) -&gt; ():WelcomeViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "swipeGesture.direction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthenticationController.setUser(fromDictionary : [AnyHashable : Any]) -&gt; ():AuthenticationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "user">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthenticationController.signUp(withEmail : String, firstName : String, lastName : String, completionHandler : (AuthenticationStatus, Bool, Error?) -&gt; ()) -&gt; ():AuthenticationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "User.emailField">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "User.init(fromDictionary : [AnyHashable : Any]) -&gt; User?:User.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary.keys">
+            </PersistentString>
+            <PersistentString
+               value = "dictionary[User.idField]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

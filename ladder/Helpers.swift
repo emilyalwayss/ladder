@@ -11,25 +11,25 @@ import UIKit
 
 //var me: Account? = nil
 
-struct user {
-    let first_name: String
-    let last_name: String
-    let level: String
-    let courts: [String]
-    let times: [String]
-    let win_record: Int
-    let loss_record: Int
-}
+//struct user {
+//    let first_name: String
+//    let last_name: String
+//    let level: String
+//    let courts: [String]
+//    let times: [String]
+//    let win_record: Int
+//    let loss_record: Int
+//}
 
-struct data {
-    static let me = user(first_name: "Emily", last_name: "Chen", level: "3.0", courts: ["Harvard", "MIT", "Carter-Williams"], times: ["Thursday AM", "Saturday PM"], win_record: 3, loss_record: 5)
-    
-    static let users = [user(first_name: "Michael", last_name: "Rong", level: "4.0", courts: ["Harvard", "Woburn"], times: ["Friday AM", "Sunday PM"], win_record: 8, loss_record: 2), user(first_name: "Kiko", last_name: "Lam", level: "3.5", courts: ["Tufts"], times: ["Friday AM", "Wednesday AM"], win_record: 5, loss_record: 0)]
-}
+//struct data {
+//    static let me = user(first_name: "Emily", last_name: "Chen", level: "3.0", courts: ["Harvard", "MIT", "Carter-Williams"], times: ["Thursday AM", "Saturday PM"], win_record: 3, loss_record: 5)
+//    
+//    static let users = [user(first_name: "Michael", last_name: "Rong", level: "4.0", courts: ["Harvard", "Woburn"], times: ["Friday AM", "Sunday PM"], win_record: 8, loss_record: 2), user(first_name: "Kiko", last_name: "Lam", level: "3.5", courts: ["Tufts"], times: ["Friday AM", "Wednesday AM"], win_record: 5, loss_record: 0)]
+//}
 
 
 struct Constants {
-    static let service = "http://localhost:3000/"
+//    static let service = "http://localhost:3000/"
     struct Colors {
         static let BLUE = UIColor(red: 100/255, green: 157/255, blue: 178/255, alpha: 1.0)
         static let ORANGE = UIColor(red: 245/255, green: 166/255, blue: 35/255, alpha: 1.0)

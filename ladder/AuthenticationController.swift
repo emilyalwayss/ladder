@@ -36,12 +36,12 @@ class AuthenticationController {
         user?.write(toUserDefaults: UserDefaults.standard)
     }
     
-    func signUp(withEmail email: String, firstName: String, lastName: String, completionHandler: @escaping AuthenticationHandler) {
-        let request = [User.emailField: email,
-                       User.firstNameField: firstName,
-                       User.lastNameField: lastName]
-        
-        RequestHandler.unauthenticatedRequest(endpoint: "/api/register", method: .post, parameters: request, completionHandler: {(response, success) in
+    func signUp(withEmail email: String, firstName: String, lastName: String, password: String, completionHandler: @escaping AuthenticationHandler) {
+        let request = [User.firstNameField: firstName,
+                       User.lastNameField: lastName,
+                       User.emailField: email,
+                       User.passwordField: password]
+        RequestHandler.unauthenticatedRequest(endpoint: "api/register", method: .post, parameters: request, completionHandler: {(response, success) in
             if success {
                 var isFirstTimeUser = true
                 if let json = response.result.value as? [AnyHashable : Any] {
@@ -67,14 +67,16 @@ class AuthenticationController {
         // TODO
     }
     
-    private func signIn(withEmail email: String, firstName: String, lastName: String, completionHandler: @escaping AuthenticationHandler) {
+    func signIn(withEmail email: String, password: String, completionHandler: @escaping AuthenticationHandler) {
         
         let request = [User.emailField: email,
-                       User.firstNameField: firstName,
-                       User.lastNameField: lastName]
+                       User.passwordField: password]
 
-        RequestHandler.unauthenticatedRequest(endpoint: "/api/register", method: .post, parameters: request, completionHandler: {(response, success) in
+        RequestHandler.unauthenticatedRequest(endpoint: "api/login", method: .post, parameters: request, completionHandler: {(response, success) in
             if success {
+                if let json = response.result.value as? [AnyHashable : Any] {
+                    self.setUser(fromDictionary: json)
+                }
                 completionHandler(self.getAuthenticationStatus(), false, nil)
             } else {
                 completionHandler(self.getAuthenticationStatus(), false, response.result.error)

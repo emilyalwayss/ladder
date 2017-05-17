@@ -9,11 +9,17 @@
 import Foundation
 
 class User {
-    static let idField = "id"
+    static let idField = "_id"
     static let emailField = "email"
     static let firstNameField = "firstName"
     static let lastNameField = "lastName"
+    static let passwordField = "password"
     static let tokenField = "token"
+    static let skillLevelField = "skillLevel"
+    static let gamesWonField = "gamesWon"
+    static let gamesLostField = "gamesLost"
+    static let preferredCourtsField = "preferredCourts"
+    static let preferredTimesField = "preferredTimes"
     
     static let defaultKeys : [String] = [User.idField, User.emailField, User.firstNameField, User.lastNameField]
     
@@ -24,6 +30,11 @@ class User {
     var fullName : String {
         return "\(firstName) \(lastName)"
     }
+    var skillLevel : Double
+    var gamesWon : Int
+    var gamesLost : Int
+    var preferredCourts : [String]?
+    var preferredTimes : [String]?
     var profilePhoto : String?
     
     init?(fromDictionary dictionary: [AnyHashable : Any]) {
@@ -36,6 +47,11 @@ class User {
         self.email = dictionary[User.emailField] as? String
         self.firstName = firstName
         self.lastName = lastName
+        self.skillLevel = dictionary[User.skillLevelField] as? Double ?? 3.5
+        self.gamesWon = dictionary[User.gamesWonField] as? Int ?? 0
+        self.gamesLost = dictionary[User.gamesLostField] as? Int ?? 0
+        self.preferredCourts = dictionary[User.preferredCourtsField] as? [String]
+        self.preferredTimes = dictionary[User.preferredTimesField] as? [String]
     }
     
     init?(fromUserDefaults defaults: UserDefaults) {
@@ -48,6 +64,9 @@ class User {
         self.email = defaults.string(forKey: User.emailField)
         self.firstName = firstName
         self.lastName = lastName
+        self.skillLevel = defaults.double(forKey: User.skillLevelField)
+        self.gamesWon = defaults.integer(forKey: User.gamesWonField)
+        self.gamesLost = defaults.integer(forKey: User.gamesLostField)
     }
     
     func write(toUserDefaults defaults: UserDefaults) {

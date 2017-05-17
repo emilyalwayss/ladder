@@ -35,7 +35,16 @@ class LoginViewController: UIViewController {
     }
     
     func login(userEmail: String, userPassword: String) {
-        self.performSegue(withIdentifier: "loginToTabSegue", sender: self)
+        AuthenticationController.sharedInstance.signIn(withEmail: userEmail, password: userPassword, completionHandler: {(authenticationStatus, isFirstTimeUser, error) in
+            switch authenticationStatus {
+            case .isAuthenticated:
+                self.performSegue(withIdentifier: "loginToTabSegue", sender: self)
+            default:
+                let alertController = UIAlertController(title: "Error", message: "Error Logging In", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel))
+                self.present(alertController, animated: true)
+            }
+        })
     }
 
     

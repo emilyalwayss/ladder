@@ -35,13 +35,13 @@ class SearchTableViewController: UITableViewController {
 //            self.users = users.filter { ($0["username"] as! String) != me!.username }
 //            self.tableView.reloadData()
 //        }
-        for user in data.users {
-            var dic: [String: Any] = [:]
-            for (_, attr) in Mirror(reflecting: user).children.enumerated() {
-                dic[attr.label!] = attr.value
-            }
-            users.append(dic)
-        }
+//        for user in data.users {
+//            var dic: [String: Any] = [:]
+//            for (_, attr) in Mirror(reflecting: user).children.enumerated() {
+//                dic[attr.label!] = attr.value
+//            }
+//            users.append(dic)
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
