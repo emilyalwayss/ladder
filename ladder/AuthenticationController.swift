@@ -45,6 +45,7 @@ class AuthenticationController {
             if success {
                 var isFirstTimeUser = true
                 if let json = response.result.value as? [AnyHashable : Any] {
+                    self.token = json["token"] as? String
                     self.setUser(fromDictionary: json)
                     if let isExistingUser = json["isExistingUser"] as? Bool {
                         isFirstTimeUser = !isExistingUser
@@ -75,6 +76,7 @@ class AuthenticationController {
         RequestHandler.unauthenticatedRequest(endpoint: "api/login", method: .post, parameters: request, completionHandler: {(response, success) in
             if success {
                 if let json = response.result.value as? [AnyHashable : Any] {
+                    self.token = json["token"] as? String
                     self.setUser(fromDictionary: json)
                 }
                 completionHandler(self.getAuthenticationStatus(), false, nil)

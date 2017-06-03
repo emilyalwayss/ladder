@@ -3,10 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "AuthenticationController.getAuthenticationStatus() -&gt; AuthenticationStatus:AuthenticationController.swift">
+         contextName = "static RequestHandler.request(endpoint : String, method : HTTPMethod, parameters : [String : Any]?, completionHandler : (DataResponse&lt;Any&gt;, Bool) -&gt; ()) -&gt; ():RequestHandler.swift">
          <PersistentStrings>
             <PersistentString
-               value = "user == nil">
+               value = "AuthenticationController.sharedInstance.token">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SearchController.sharedInstance.users[0] ">
+            </PersistentString>
+            <PersistentString
+               value = "SearchController.sharedInstance.users[0][&quot;id&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -27,6 +38,44 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "User.init(fromDictionary : [AnyHashable : Any]) -&gt; User?:User.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary.keys">
+            </PersistentString>
+            <PersistentString
+               value = "dictionary[User.idField]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AuthenticationController.(signIn(withEmail : String, password : String, completionHandler : (AuthenticationStatus, Bool, Error?) -&gt; ()) -&gt; ()).(closure #1):AuthenticationController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value as? [String : Any]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static RequestHandler.(request(endpoint : String, method : HTTPMethod, parameters : [String : Any]?, completionHandler : (DataResponse&lt;Any&gt;, Bool) -&gt; ()) -&gt; ()).(closure #1):RequestHandler.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.result.value as? [String: Any]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchController.(getAllUsers() -&gt; ()).(closure #1):SearchController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.users">
+            </PersistentString>
+            <PersistentString
+               value = "user[&quot;email&quot;] as String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AuthenticationController.signUp(withEmail : String, firstName : String, lastName : String, completionHandler : (AuthenticationStatus, Bool, Error?) -&gt; ()) -&gt; ():AuthenticationController.swift">
          <PersistentStrings>
             <PersistentString
@@ -35,13 +84,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "User.init(fromDictionary : [AnyHashable : Any]) -&gt; User?:User.swift">
+         contextName = "AuthenticationController.getAuthenticationStatus() -&gt; AuthenticationStatus:AuthenticationController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "dictionary.keys">
-            </PersistentString>
-            <PersistentString
-               value = "dictionary[User.idField]">
+               value = "user == nil">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

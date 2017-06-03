@@ -24,12 +24,14 @@ class SearchTableViewController: UITableViewController {
     @IBOutlet weak var backBarButtonItem: UIBarButtonItem!
     
     var date: Date = Date()
-    var users: [[String: Any]] = []
+//    var users: [[String: Any]] = []
     var selectedIndex: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
+        
 //        queryUsers(query: "accounts") {
 //            users in
 //            self.users = users.filter { ($0["username"] as! String) != me!.username }
@@ -52,6 +54,8 @@ class SearchTableViewController: UITableViewController {
         self.navigationItem.title = format.string(from: date)
         
         backBarButtonItem.isEnabled = format.string(from: date) != format.string(from: Date())
+        
+        SearchController.sharedInstance.getAllUsers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,7 +64,7 @@ class SearchTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return SearchController.sharedInstance.users.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -69,14 +73,13 @@ class SearchTableViewController: UITableViewController {
         
         cell.profileImageView.makeCircular()
         
-        let userDict = users[indexPath.row] 
-        cell.nameLabel.text = (userDict["first_name"] as! String) + " " + (userDict["last_name"] as! String)
-        cell.courtsLabel.text = userDict["courts"] == nil ? "No preferred courts" : (userDict["courts"] as! [String]).joined(separator: ", ")
-        cell.timeLabel.text = userDict["times"] == nil ? "No preferred times" : (userDict["times"] as! [String]).joined(separator: ", ")
-        cell.responseLabel.text = userDict["response"] == nil ? "" : userDict["response"] as! String
-        cell.levelLabel.text = userDict["level"] == nil ? "1" : userDict["level"] as! String
-        cell.recordLabel.text = userDict["record"] == nil ? "0:0" : userDict["record"] as! String
-        
+        let userDict = SearchController.sharedInstance.users[indexPath.row]
+        cell.nameLabel.text = "\(userDict.firstName) \(userDict.lastName)"
+        cell.courtsLabel.text = userDict.preferredCourts?.joined(separator: ", ") ?? "No preferred courts"
+        cell.timeLabel.text = userDict.preferredTimes?.joined(separator: ", ") ?? "No preferred times"
+//        cell.responseLabel.text = userDict["response"] == nil ? "" : userDict["response"] as! String
+        cell.levelLabel.text = "\(userDict.skillLevel)"
+        cell.recordLabel.text = "\(userDict.gamesWon) : \(userDict.gamesLost)"
         return cell
     }
     
@@ -99,7 +102,7 @@ class SearchTableViewController: UITableViewController {
         }
         else if (segue.identifier == "searchToProfileSegue") {
             let profileViewController = (segue.destination as! UINavigationController).topViewController as! UserProfileViewController
-            profileViewController.user = users[selectedIndex]
+//            profileViewController.user = SearchController.sharedInstance.users[selectedIndex]
             
         }
     }

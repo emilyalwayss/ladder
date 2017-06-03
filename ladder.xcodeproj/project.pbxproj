@@ -15,6 +15,7 @@
 		9544AA482100CAEB85D0A449 /* Pods_ladder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017914C856A0288430A7BB96 /* Pods_ladder.framework */; };
 		A10239201E50CE2A009A583B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102391F1E50CE2A009A583B /* Helpers.swift */; };
 		A10239221E52AE01009A583B /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10239211E52AE01009A583B /* MeViewController.swift */; };
+		A12A705D1ECDE78600946200 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12A705C1ECDE78600946200 /* SearchController.swift */; };
 		A17D67991E721EBF0071BB18 /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67981E721EBF0071BB18 /* InvitationViewController.swift */; };
 		A17D679B1E8706E70071BB18 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D679A1E8706E70071BB18 /* WelcomeViewController.swift */; };
 		A17D67A31E870DF20071BB18 /* LearnPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17D67A21E870DF20071BB18 /* LearnPageContentViewController.swift */; };
@@ -62,6 +63,7 @@
 		6DA745D21EC8E5A400033360 /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
 		A102391F1E50CE2A009A583B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		A10239211E52AE01009A583B /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		A12A705C1ECDE78600946200 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		A17D67981E721EBF0071BB18 /* InvitationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
 		A17D679A1E8706E70071BB18 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		A17D67A21E870DF20071BB18 /* LearnPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnPageContentViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				6DA745CD1EC8DB4B00033360 /* RequestHandler.swift */,
 				6DA745D01EC8E10100033360 /* AuthenticationController.swift */,
+				A12A705C1ECDE78600946200 /* SearchController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			files = (
 				A1CE6E3D1E5FB11D006204A6 /* SearchTableViewController.swift in Sources */,
 				A17D679B1E8706E70071BB18 /* WelcomeViewController.swift in Sources */,
+				A12A705D1ECDE78600946200 /* SearchController.swift in Sources */,
 				6DA745D31EC8E5A400033360 /* UserDataManager.swift in Sources */,
 				A18FA7C11E8B29A8002433AE /* LeftToRightStoryboardSegue.swift in Sources */,
 				A17D67991E721EBF0071BB18 /* InvitationViewController.swift in Sources */,
